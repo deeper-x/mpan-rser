@@ -2,7 +2,7 @@
 The function required is in index.js.
 
 
-Simply calling
+Usage example:
 ```shell
 $ node index.js path/to/pdf
 ```
