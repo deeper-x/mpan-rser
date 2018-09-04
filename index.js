@@ -16,7 +16,7 @@ const pdf = require('pdf-parse');
         
         pdf(raw_buffer).then((data)=>{
             
-            const MPAN_REGEX = /[\w]{1}\ [\d| ]{27}/;
+            const MPAN_REGEX = /\s[S]{1}\s[\d|\s]{27}\s/;
             let to_parse = data.text;
             let MPAN_code;
 
