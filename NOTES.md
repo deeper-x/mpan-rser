@@ -29,8 +29,8 @@ That string is usually filled in a box, and best option to get it seems to be
 
 
 Fetching that string, we can have, for example:
-S 902 01 801 12 0005 1808 366
-S 01 801 001 11 6000 1208 212
+* S 902 01 801 12 0005 1808 366
+* S 01 801 001 11 6000 1208 212
 
 we see that length is the same, and internal blocks order may change (PDF are built/drawn in different ways...).
 The fixed elements seem to be:
