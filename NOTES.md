@@ -2,7 +2,7 @@
 The function required is in index.js.
 
 
-Simply calling
+Usage example:
 ```shell
 $ node index.js path/to/pdf
 ```
@@ -23,14 +23,14 @@ So we have 7 blocks:
 * DISTR ID (10..32)
 * CHECK (a checksum based on DISTR ID)
 
-That string is usually filled in a box, and best option to get it seems to be 
+That string is usually filled in a box, and we don't know page or location, therefore the best option to get it seems to be 
 * extracting whole text from pdf
 * searching for a match  
 
 
 Fetching that string, we can have, for example:
-S 902 01 801 12 0005 1808 366
-S 01 801 001 11 6000 1208 212
+* S 902 01 801 12 0005 1808 366
+* S 01 801 001 11 6000 1208 212
 
 we see that length is the same, and internal blocks order may change (PDF are built/drawn in different ways...).
 The fixed elements seem to be:
@@ -38,11 +38,11 @@ The fixed elements seem to be:
 * a 27 length sequence of digits and/or spaces. The only unsure element is the LLFC: can be alphanum? 
 * a final space
 
-Coming back to the code description, for now we check that "raw string": if founded is returned as a result 
-(of course, will be useful to store it).
+Coming back to the code description, for now we check that "raw string": if founded is returned as a console.log result 
+(of course, in a next release could be useful to store it).
 
 
-In the next releases, I would work on:
+In the next releases, I would also work on:
 * LLFC: if can be alphanum, regexp must be updated
 * a string "format check". All of these "blocks" seem to have a defined and unique range and length, so it would be useful to implement a function (maybe a Class) with dedicated check and reading method. This can be useful if -in the future- we want to store informations that blocks' string give us.
 * a massive-parser: a PDF directory scan service (given N new PDF, it'll get MPAN codes, in batch/cron or manually)
