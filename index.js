@@ -1,7 +1,7 @@
 const fs = require('fs');
 const pdf = require('pdf-parse');
  
-let get_MPAN = function(){
+(function(){
     if ( process.argv.length != 3 ){
         console.log(`Input PDF bill required! E.g. ${__filename} your_pdf.pdf`);
         process.exit(-1);
@@ -35,5 +35,5 @@ let get_MPAN = function(){
         });
     
     })
-}(); 
+}()); 
     
