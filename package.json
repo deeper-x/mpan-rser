@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pdf-parse": "^1.0.8",
-    "pdf-parser": "^1.0.4"
+    "pdf-parse": "^1.0.8"
   }
 }
