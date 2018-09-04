@@ -1,0 +1,15 @@
+{
+  "name": "labrador",
+  "version": "1.0.0",
+  "description": "Bill's MPAN reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pdf-parse": "^1.0.8",
+    "pdf-parser": "^1.0.4"
+  }
+}
