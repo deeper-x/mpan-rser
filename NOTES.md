@@ -23,7 +23,7 @@ So we have 7 blocks:
 * DISTR ID (10..32)
 * CHECK (a checksum based on DISTR ID)
 
-That string is usually filled in a box, and best option to get it seems to be 
+That string is usually filled in a box, and we don't know page or location, therefore the best option to get it seems to be 
 * extracting whole text from pdf
 * searching for a match  
 
