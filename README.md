@@ -3,7 +3,7 @@
 Parse a pdf bill, and extract the MPAN of your energy provider
 
 
-### Prerequisites
+### Requirements
 
 node 
 
@@ -21,9 +21,17 @@ npm install
 
 
 
-## Running the tests
+## Run 
 
-# TODO
+```
+$ node index.js bill_file.pdf
+
+```
+
+## Notes
+
+
+See NOTES.md for details
 
 
 
